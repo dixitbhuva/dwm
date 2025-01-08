@@ -22,6 +22,10 @@ Arch Linux
 run this from home directory and dont deleted cloned folder after install because it contain configrations and wallpapers
 copy config and make it yours then delete this folder
 
+dont forget to change path from /home/baba/.dwm
+to your username i am now swithcing to openbox so i dont edit that for you
+change that and recompile and reinstall and you set
+
 ```bash
 git clone https://github.com/dixitbhuva/dwm.git ~/.dwm \
 && cd ~/.dwm \
