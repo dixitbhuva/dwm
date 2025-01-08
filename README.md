@@ -23,7 +23,7 @@ run this from home directory and dont deleted cloned folder after install becaus
 copy config and make it yours then delete this folder
 
 dont forget to change path from /home/baba/.dwm
-to your username i am now swithcing to openbox so i dont edit that for you
+to your username in config.h and config.def.h i am now swithcing to openbox so i dont edit that for you
 change that and recompile and reinstall and you set
 
 ```bash
