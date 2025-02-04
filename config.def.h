@@ -78,7 +78,7 @@ static const char *prevcmd[] = { "playerctl", "previous", NULL };
 static const char *light_up[]   = { "/usr/bin/brightnessctl",   "set", "+10%", NULL };
 static const char *light_down[] = { "/usr/bin/brightnessctl",   "set", "10%-", NULL };
 
-static const char *wallpaperchange[] = { "sh", "-c", "/usr/bin/feh --randomize --no-fehbg --bg-fill ~/.suckless/wallpaper/", NULL };
+static const char *wallpaperchange[] = { "sh", "-c", "/usr/bin/feh --randomize --no-fehbg --bg-fill ~/wallpapers/", NULL };
 
 static const Key keys[] = {
   /* modifier                     key        function        argument */
