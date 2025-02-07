@@ -42,6 +42,23 @@ while true; do
 done
 ```
 
+```bash
+#while true; do
+#	dwm 2> ~/.dwm.log
+#done
+
+xset s off & # Disable screen saver (no blanking, no dimming)
+xset -dpms & # Disable Display Power Management (no standby, suspend, or power-off)
+dbus-update-activation-environment --systemd --all & # Don't Exactly know which variables are updated but it's good idea to run it with startup, seen on forms
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & # Just Polkit, prompt for authentication in like gnome-disks
+dunst & # Notification Demon
+feh --randomize --no-fehbg --bg-fill ~/wallpapers/* & # Set Wallpaper
+#picom --experimental-backends --config ~/.config/picom/picom.conf --vsync & # compositor background blur and transparancy
+while :; do ~/dwm/dwmstatus.sh -; sleep 1; done & # Status Bar date and battery
+
+exec dwm > ~/.dwm.log 2>&1
+```
+
 Assuming you have pipewire otherwise change to one of this in config file if you have pulse audio
 
 ```c
